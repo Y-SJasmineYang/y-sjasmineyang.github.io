@@ -1,6 +1,6 @@
 // Dynamically load section content into index.html
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = ["about", "cv", "research", "teaching", "contact"];
+  const sections = ["about", "research", "teaching"];
 
   sections.forEach(section => {
     fetch(`sections/${section}.html`)

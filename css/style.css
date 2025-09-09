@@ -45,6 +45,14 @@ footer {
   color: #555;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Hamburger Icon */
 .menu-toggle {
   display: none;
@@ -116,7 +124,13 @@ footer {
 
 .column {
   float: left;
-  width: 50%;
+  width: 70%;
+  padding: 5px;
+}
+
+.column_img {
+  float: left;
+  width: 30%;
   padding: 5px;
 }
 
