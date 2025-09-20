@@ -20,4 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
   toggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
+
+  // Close menu when a nav link is clicked
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
+  });
 });

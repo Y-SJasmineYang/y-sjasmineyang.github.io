@@ -197,4 +197,13 @@ a:hover {
   .nav-links.show {
     display: flex;
   }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+  }
 }
