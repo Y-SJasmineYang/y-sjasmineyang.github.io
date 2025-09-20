@@ -124,13 +124,13 @@ a:hover {
 
 .column {
   float: left;
-  width: 70%;
+  width: 65%;
   padding: 5px;
 }
 
 .column_img {
   float: left;
-  width: 30%;
+  width: 35%;
   padding: 5px;
 }
 
@@ -175,5 +175,17 @@ a:hover {
   footer {
     font-size: 0.8rem;
     padding: 1.5rem;
+  }
+
+  .column {
+    float: left;
+    width: 55%;
+    padding: 5px;
+  }
+
+  .column_img {
+    float: left;
+    width: 45%;
+    padding: 5px;
   }
 }
