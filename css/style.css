@@ -122,6 +122,10 @@ a:hover {
   left: 0; 
 }
 
+.row {
+  display: flex;
+}
+
 .column {
   float: left;
   width: 65%;
@@ -179,13 +183,18 @@ a:hover {
 
   .column {
     float: left;
-    width: 55%;
+    width: 100%;
     padding: 5px;
   }
 
   .column_img {
     float: left;
-    width: 45%;
+    align-self: center;
+    width: 55%;
     padding: 5px;
+  }
+
+  .row {
+    flex-direction: column-reverse;
   }
 }
