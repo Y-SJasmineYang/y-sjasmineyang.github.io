@@ -1,0 +1,32 @@
+# Site info
+title: Yung-Shiang Jasmine Yang
+email: yung-shiang.yang@ucdconnect.ie
+description: >- # this allows multiple lines
+  Welcome to the academic profile of Yung-Shiang Jasmine Yang, 
+  featuring research interests, publications, and teaching activities.
+
+# URL configuration (Needed for GitHub Pages)
+# If site is https://y-sjasmineyang.github.io/, leave baseurl as ""
+baseurl: "" 
+url: "https://y-sjasmineyang.github.io"
+
+# file config
+markdown: kramdown
+highlighter: rouge # to highlight code if needed
+
+# Exclude files Jekyll processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - vendor/
+  - index.old
+
+# GitHub Pages config
+remote_theme: # empty means using local css
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag # helps browsers

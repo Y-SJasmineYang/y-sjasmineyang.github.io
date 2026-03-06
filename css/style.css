@@ -8,6 +8,10 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hace que el body ocupe al menos el 100% de la altura de la pantalla */
+  margin: 0;
 }
 
 header {
@@ -19,23 +23,19 @@ header {
   z-index: 1000;
 }
 
-section {
+main {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
 }
 
-section ul li {
+main ul li {
 margin-left: 1rem;
 }
 
 h2 {
   margin-bottom: 20px;
   color: #2c3e50;
-}
-
-section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
 }
 
 footer {
