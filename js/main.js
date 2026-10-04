@@ -15,3 +15,48 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+document.querySelectorAll('.js-animated-details summary').forEach((summary) => {
+  summary.addEventListener('click', (e) => {
+    e.preventDefault();
+    const details = summary.parentElement;
+    const content = details.querySelector('.content');
+
+    if (details.open) {
+      // Closing animation
+      const startHeight = content.offsetHeight;
+      content.style.height = `${startHeight}px`;
+      
+      requestAnimationFrame(() => {
+        content.style.height = '0px';
+        content.style.opacity = '0';
+      });
+
+      content.addEventListener('transitionend', function handler() {
+        details.removeAttribute('open');
+        content.style.height = '';
+        content.style.opacity = '';
+        content.removeEventListener('transitionend', handler);
+      });
+    } else {
+      // Opening animation
+      details.setAttribute('open', '');
+      const endHeight = content.offsetHeight;
+      
+      content.style.height = '0px';
+      content.style.opacity = '0';
+      
+      requestAnimationFrame(() => {
+        content.style.height = `${endHeight}px`;
+        content.style.opacity = '1';
+      });
+
+      content.addEventListener('transitionend', function handler() {
+        content.style.height = '';
+        content.style.opacity = '';
+        content.removeEventListener('transitionend', handler);
+      });
+    }
+  });
+});

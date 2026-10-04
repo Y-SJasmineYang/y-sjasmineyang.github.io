@@ -1,3 +1,7 @@
+:root {
+  interpolate-size: allow-keywords;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -171,6 +175,32 @@ a:hover {
   background-color: #f1f1f1;
 }
 
+.abstract {
+  padding: 10px;
+  color: #797878;
+}
+
+/* Target the native pseudo-element inside details */
+.animated-details::details-content {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out, opacity 0.3s ease-out, display 0.3s allow-discrete;
+}
+
+/* Target state when open */
+.animated-details[open]::details-content {
+  opacity: 1;
+  height: auto;
+}
+
+/* Define entry keyframe state when opened */
+@starting-style {
+  .animated-details[open]::details-content {
+    opacity: 0;
+    height: 0;
+  }
+}
 
 /* ----------- RESPONSIVE STYLES ----------- */
 @media (max-width: 768px) {
