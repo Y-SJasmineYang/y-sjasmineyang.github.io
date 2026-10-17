@@ -1,33 +1,403 @@
----
-layout: default
-title: Home
----
-
-<div class="row">
-  <div class="column">
-    <p>Hi, I’m Yung-Shiang Jasmine Yang. I’m a Research Associate (Postdoctoral Researcher) at the University of Galway and a PhD Candidate in Economics at University College Dublin.</p>
-    <br>
-    <p>My viva is scheduled for January 2027, and <strong>I’m on the 2026–2027 academic job market.</strong></p>
-
-<br>
-<p>My research is in behavioural economics. I use experiments and theoretical models to study how people make decisions, both individually and collectively.</p>
-<br>
-<p>One part of my work looks at individual choices: for example, how motivation, algorithmic discrimination, ambiguity aversion, or rank information affects decisions.</p>
-<br>
-<p>I’m also interested in cooperation and collective decision-making. At Galway, I work on the LE CHÉILE (Local Examples of Cooperation and Harnessing Experimental Insights to Lower Emissions) project.</p>
-<br>
-    <p><strong>Research Interests:</strong> Behavioral Economics, Experimental Economics, Game Theory, Environmental Economics, Public Economics</p>
-    <br>
-    <p><a href="https://y-sjasmineyang.github.io/src/Job_Market_CV_Sep. 2026.pdf" target="_blank" rel="noopener noreferrer">View my CV</a></p>
-    <br>
-    <h4>Get in touch with me</h4>
-    <p><i class="bi bi-envelope"></i> <a href="mailto:yung-shiang.yang@ucdconnect.ie">yung-shiang.yang@ucdconnect.ie</a></p>
-    <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/yung-shiang-jasmine-yang-150875225/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-  </div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yung-Shiang Jasmine Yang | Academic Website</title>
+  <meta name="description" content="Academic website of Yung-Shiang Jasmine Yang, Research Associate at University of Galway and PhD Candidate at University College Dublin." />
   
-  <div class="column_img">
-    <img src="{{ '/src/2602_Yang_Y-S_017a.jpg' | relative_url }}" id="profile-pic" alt="Picture of Yung-Shiang" style="width:100%;border-radius: 10px;">
-  </div>
-</div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
 
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#about" class="nav-logo">Y. S. Jasmine Yang</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span class="menu-text">Menu</span>
+        <i class="fas fa-bars"></i> <!-- or your preferred icon -->
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link active">About Me</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#cv" class="nav-link">CV</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-layout container">
+    
+    <!-- Profile Card -->
+    <div class="profile-hero">
+        <div class="profile-avatar">
+            <img src="src/img/2602_Yang_Y-S_017a.jpg" alt="Yung-Shiang Jasmine Yang" onerror="this.src='https://via.placeholder.com/150?text=Jasmine+Yang'" />
+        </div>
+    
+        <div class="profile-hero-content">
+            <h1>Yung-Shiang Jasmine Yang</h1>
+            <p class="profile-title">Research Associate</p>
+            <p class="profile-affiliation">University of Galway & University College Dublin</p>
+
+            <div class="profile-meta">
+            <span class="meta-item"><i class="fa-solid fa-graduation-cap"></i> PhD Candidate in Economics</span>
+            <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Ireland</span>
+            </div>
+
+            <div class="hero-actions">
+            <a href="src/doc/Job_Market_CV_Oct. 2026.pdf" class="btn btn-primary" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i> View my CV
+            </a>
+            <div class="social-links-inline">
+                <a href="mailto:yung-shiang.yang@ucdconnect.ie" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/yung-shiang-jasmine-yang-150875225/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/y-sjasmineyang" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+
+      <!-- About Section -->
+      <section id="about" class="section-block">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">
+            Hi, I am Yung-Shiang Jasmine Yang. I am a Research Associate (Postdoctoral Researcher) at the University of Galway and a PhD Candidate in Economics at University College Dublin (UCD).
+        </p>
+        <p>
+            My viva is scheduled for January 2027, and <strong>I am on the 2026–2027 academic job market.</strong>
+        </p>
+        <p>
+            My research is in <strong>behavioural economics</strong>. I use experiments and theoretical models to study how people make decisions, both individually and collectively.
+        </p>
+        <p>
+            One part of my work looks at individual choices: for example, how motivation, algorithmic discrimination, ambiguity aversion, or rank information affects decisions.
+            I am also interested in cooperation and collective decision-making. 
+        </p>
+        <p>
+            At Galway, I work on the <em>LE CHÉILE</em> (Local Examples of Cooperation and Harnessing Experimental Insights to Lower Emissions) project.
+        </p>
+
+        <div class="interests-box">
+          <h3>Research Interests</h3>
+          <div class="tags">
+            <span class="tag">Behavioral Economics</span>
+            <span class="tag">Experimental Economics</span>
+            <span class="tag">Game Theory</span>
+            <span class="tag">Environmental Economics</span>
+            <span class="tag">Public Economics</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Section -->
+    <section id="research" class="section-block">
+    <h2 class="section-title">Research</h2>
+    
+
+    <!-- Group 1: Job Market Paper -->
+    <div class="pub-group">
+        <h3 class="pub-group-heading">Job Market Paper</h3>
+        
+        <div class="pub-item">
+            <h4 class="pub-title">Discriminated but not Discouraged: Investment Responses to Algorithmic Discrimination</h4>
+            <p class="pub-meta-line">
+                <span class="pub-authors">Yung-Shiang Jasmine Yang (2026)</span>
+                <span class="pub-journal">(Submitted)</span>
+            </p>
+            
+            <!-- Collapsible Abstract using native HTML details -->
+            <details class="pub-abstract-details">
+                <summary class="btn-toggle-abstract">
+                    <span class="show-text"><i class="fa-solid fa-chevron-right"></i> Abstract</span>
+                    <span class="hide-text"><i class="fa-solid fa-chevron-down"></i> Hide Abstract</span>
+                </summary>
+                <div class="pub-abstract">
+                <p>
+                    We study how individuals adapt their investment when an algorithm evaluates groups differently.
+                    In a pre-registered online experiment (N = 553), participants are randomly assigned to an advantaged or disadvantaged identity group
+                    and choose how much to invest to improve their probability of being hired by an algorithm that holds different prior beliefs across groups.
+                    Disadvantaged participants invest 17.7% more than advantaged participants, showing no evidence of discouragement in investment despite facing
+                    less favorable evaluation. We then test two interventions: “Role Model” treatments providing information about the behavior and outcomes of
+                    same-group predecessors, and a “No Risk” treatment that conditions payment of the investment cost on being hired. The “Role Model” treatments
+                    have limited effects, whereas “No Risk” increases investment among disadvantaged participants by 24%. This effect is significantly larger than
+                    the corresponding effect among advantaged participants. Our findings show that individuals can respond to algorithmic disadvantage by increasing
+                    rather than reducing investment, and that changing the economic consequences of investment generates a stronger behavioral response than same-group
+                    social information.
+                </p>
+                </div>
+            </details>
+
+            <div class="pub-links">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7528787" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-file-pdf"></i> Read paper</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> Data/Code</a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Group 2: Publications -->
+     <div class="pub-group">
+        <h3 class="pub-group-heading">Publications</h3>
+        
+
+        <div class="pub-item">
+            <h4 class="pub-title">Motivation in All-Pay Contests</h4>
+            <p class="pub-meta-line">
+                <span class="pub-authors">Yung-Shiang Jasmine Yang (2026)</span>
+                <span class="pub-journal">Journal of Public Economic Theory, 28(1), e70100.</span>
+            </p>
+
+            <!-- Collapsible Abstract using native HTML details -->
+            <details class="pub-abstract-details">
+                <summary class="btn-toggle-abstract">
+                    <span class="show-text"><i class="fa-solid fa-chevron-right"></i> Abstract</span>
+                    <span class="hide-text"><i class="fa-solid fa-chevron-down"></i> Hide Abstract</span>
+                </summary>
+                <div class="pub-abstract">
+                <p>
+                    This paper studies how agents with monetary and non-monetary motivation interact strategically in competitions.
+                    Examining the question under an all-pay contest framework, we show that there do not exist pure-strategy equilibria 
+                    when the competing agents share the same motivation. When agents with different motivation compete against each other, 
+                    we determine the conditions for the existence of pure-strategy equilibria and fully characterize the mixed-strategy equilibria.
+                    The results help explain situations where prizes are ineffective in eliciting higher efforts in contests.
+                    They show that the discouragement effect is prevalent when competing agents harbor different motivation and illustrate how
+                    reputation and money can be complementary goods.
+                </p>
+                </div>
+            </details>
+
+            <div class="pub-links">
+                <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jpet.70100" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-file-pdf"></i> Read paper</a>
+                <!--<a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> Data/Code</a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Group 3: Working Papers & Projects -->
+    <div class="pub-group">
+        <h3 class="pub-group-heading">Working Papers & Projects</h3>
+        
+        <div class="pub-item">
+            <h4 class="pub-title">Does Ambiguity Aversion Stem from Misperceptions of Variance? Some Experimental Evidence</h4>
+            <p class="pub-meta-line">
+                <span class="pub-authors">Yung-Shiang Jasmine Yang, <a href="https://msamahita.github.io/" target="_blank">Margaret Samahita</a>, <a href="https://www.karlwhelan.com/" target="_blank">Karl Whelan</a></span>
+                <span class="pub-journal">(In progress)</span>
+            </p>
+
+            <!-- Collapsible Abstract using native HTML details -->
+            <details class="pub-abstract-details">
+                <summary class="btn-toggle-abstract">
+                    <span class="show-text"><i class="fa-solid fa-chevron-right"></i> Abstract</span>
+                    <span class="hide-text"><i class="fa-solid fa-chevron-down"></i> Hide Abstract</span>
+                </summary>
+                <div class="pub-abstract">
+                <p>
+                    While ambiguity aversion is well documented, it is unclear what motivates it. One possibility is that people believe more ambiguous payoffs
+                    imply greater uncertainty, in the form of higher variance. In an online experiment, we construct two lotteries that differ only in ambiguity
+                    while holding expected payoffs and payoff variance constant, and test whether informing participants that the lotteries have identical expected
+                    payoffs and variance affects ambiguity aversion. Participants first choose between the two lotteries and then reveal their ambiguity premium
+                    through an incentive-compatible switching task. Although the information treatment improves participants' understanding of the lotteries' statistical
+                    properties, it does not significantly reduce the ambiguity premium, nor is the treatment effect different among participants with correct ex-ante understanding.
+                    Text analyses of participants' stated motivation show that the information treatment changes how participants explain their decisions, despite their
+                    ambiguity premium being unaffected. Our findings suggest that correcting misconceptions about payoff variance alone is insufficient to substantially
+                    reduce ambiguity aversion.
+                </p>
+                </div>
+            </details>
+
+            <!--<div class="pub-links">-->
+                <!-- <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jpet.70100" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-file-pdf"></i> Read paper</a> -->
+                <!--<a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> Data/Code</a> -->
+            <!--</div>-->
+        </div>
+
+        <div class="pub-item">
+            <h4 class="pub-title">Insights into Relative Income and Generosity</h4>
+            <p class="pub-meta-line">
+                <span class="pub-authors">Yung-Shiang Jasmine Yang, <a href="https://www.diogogeraldes.com/" target="_blank">Diogo Geraldes</a>, <a href="https://hargaden.com/enda/" target="_blank">Enda Hargaden</a></span>
+                <span class="pub-journal">(In progress)</span>
+            </p>
+
+            <!-- Collapsible Abstract using native HTML details -->
+            <!--<details class="pub-abstract-details">-->
+            <!--    <summary class="btn-toggle-abstract">-->
+            <!--        <span class="show-text"><i class="fa-solid fa-chevron-right"></i> Abstract</span>-->
+            <!--        <span class="hide-text"><i class="fa-solid fa-chevron-down"></i> Hide Abstract</span>-->
+            <!--    </summary>-->
+            <!--    <div class="pub-abstract">-->
+            <!--    <p>-->
+            <!--        TBA-->
+            <!--    </p>-->
+            <!--    </div>-->
+            <!--</details>-->
+
+            <!--<div class="pub-links">-->
+                <!-- <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jpet.70100" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-file-pdf"></i> Read paper</a> -->
+                <!--<a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> Data/Code</a> -->
+            <!--</div>-->
+        </div>
+
+        <div class="pub-item">
+            <h4 class="pub-title">Rejection and Toxic Messaging: Heterogeneous Responses in Online Dating</h4>
+            <p class="pub-meta-line">
+                <span class="pub-authors">Yung-Shiang Jasmine Yang, <a href="https://sites.google.com/view/wukun" target="_blank">Kun Wu</a></span>
+                <span class="pub-journal">(In progress)</span>
+            </p>
+
+            <!-- Collapsible Abstract using native HTML details -->
+            <!--<details class="pub-abstract-details">-->
+            <!--    <summary class="btn-toggle-abstract">-->
+            <!--        <span class="show-text"><i class="fa-solid fa-chevron-right"></i> Abstract</span>-->
+            <!--        <span class="hide-text"><i class="fa-solid fa-chevron-down"></i> Hide Abstract</span>-->
+            <!--    </summary>-->
+            <!--    <div class="pub-abstract">-->
+            <!--    <p>-->
+            <!--        TBA-->
+            <!--    </p>-->
+            <!--    </div>-->
+            <!--</details>-->
+
+            <!--<div class="pub-links">-->
+                <!-- <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jpet.70100" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-file-pdf"></i> Read paper</a> -->
+                <!--<a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-database"></i> Data/Code</a> -->
+            <!--</div>-->
+        </div>
+    </div>
+
+    </section>
+
+      <!-- Teaching Section -->
+      <section id="teaching" class="section-block">
+        <h2 class="section-title">Teaching</h2>
+        <div class="timeline">
+          
+            <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h4>Lecturer</h4>
+              <p class="institution">EM Normandie Business School</p>
+              <ul>
+                <li>(Fall, Spring) Introduction to Economics</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content">
+              <h4>Tutor</h4>
+              <p class="institution">School of Economics, University College Dublin (UCD)</p>
+              <ul>
+                <li>(Fall) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON30180" target="_blank" rel="noopener noreferrer">ECON 30180: Industrial Economics</a></li>
+                <li>(Spring) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON20180&TERMCODE=202300" target="_blank" rel="noopener noreferrer">ECON 20180: Intermediate Microeconomics II</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <h4>Lecturer</h4>
+              <p class="institution">School of Law and Government, Dublin City University (DCU)</p>
+              <ul>
+                <li>(Spring) <a href="https://modspec.dcu.ie/registry/module_contents.php?function=2&subcode=LG5025" target="_blank" rel="noopener noreferrer">LG5025: Quantitative Methods for Social Sciences 1</a></li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <h4>Tutor</h4>
+              <p class="institution">School of Economics, University College Dublin (UCD)</p>
+              <ul>
+                <li>(Fall) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON30130" target="_blank" rel="noopener noreferrer">ECON 30130: Econometrics</a>; <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON42590" target="_blank" rel="noopener noreferrer">ECON 42590: Experiments in Economics</a></li>
+                <li>(Spring) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON30390" target="_blank" rel="noopener noreferrer">ECON 30390: Experimental Economics: Lab Experiments</a>; <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON20180&TERMCODE=202300" target="_blank" rel="noopener noreferrer">ECON 20180: Intermediate Microeconomics II</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-content">
+              <h4>Tutor</h4>
+              <p class="institution">School of Economics, University College Dublin (UCD)</p>
+              <ul>
+                <li>(Fall) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON42590" target="_blank" rel="noopener noreferrer">ECON 42590: Experiments in Economics</a>; <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON10740&TERMCODE=202300" target="_blank" rel="noopener noreferrer">ECON 10740: Exploring Economics</a></li>
+                <li>(Spring) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON10020" target="_blank" rel="noopener noreferrer">ECON 10020: Principles of Macroeconomics</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-content">
+              <h4>Tutor</h4>
+              <p class="institution">School of Economics, University College Dublin (UCD)</p>
+              <ul>
+                <li>(Fall) <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=MODULE&MODULE=ECON10030" target="_blank" rel="noopener noreferrer">ECON 10030: Intro Quantitative Economics</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CV Section -->
+      <section id="cv" class="section-block">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p>You can view or download my complete CV below:</p>
+        <div class="cv-preview-box">
+          <i class="fa-solid fa-file-pdf fa-3x"></i>
+          <div>
+            <h4>Yung-Shiang Jasmine Yang - CV</h4>
+            <p>Updated October 2026</p>
+          </div>
+          <a href="src/doc/Job_Market_CV_Oct. 2026.pdf" target="_blank" class="btn btn-primary">Open CV</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-block">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <p><a href="mailto:yung-shiang.yang@ucdconnect.ie">yung-shiang.yang@ucdconnect.ie</a></p>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-building-columns"></i>
+            <h4>Office</h4>
+            <p>UCD School of Economics<br>Newman Building, Dublin, Ireland</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Yung-Shiang Jasmine Yang. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
