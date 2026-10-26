@@ -144,6 +144,8 @@ strong {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-layout {
@@ -624,5 +626,81 @@ strong {
 
   .nav-menu.active {
     display: flex;
+  }
+}
+
+/* --- Desktop Layout & Fixed Sidebar --- */
+.page-container {
+  display: flex;
+  flex-direction: column; /* Stacks vertically on mobile screens */
+  min-height: 100vh;
+}
+
+@media (min-width: 900px) {
+  .page-container {
+    flex-direction: row; /* Side-by-side layout for desktop */
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* Fixed Left Column (Sidebar Hero) */
+  .sidebar-hero {
+    width: 340px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;     /* Internal scroll if content is tall */
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--bg-body);
+    flex-shrink: 0;
+    /* Turn sidebar into a flex container */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Right Main Content */
+  .main-layout.container {
+    flex: 1;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    padding: 0 40px;
+  }
+}
+
+.sidebar-hero .profile-hero {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sidebar-hero .profile-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-hero .profile-meta {
+  justify-content: center;
+}
+
+.sidebar-hero .hero-actions {
+  justify-content: center;
+}
+
+/* --- Mobile or Small Window View --- */
+@media (max-width: 899px) {
+  .profile-hero {
+    margin-top: 2rem; /* Adds breathing room between the navigation bar and your image */
+    padding-top: 1rem;
   }
 }
